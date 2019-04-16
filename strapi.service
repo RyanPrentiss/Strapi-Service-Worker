@@ -1,0 +1,10 @@
+[Unit]
+Description=Strapi
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/info/cms/server.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
